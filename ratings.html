@@ -1,0 +1,53 @@
+<html>
+    <body> 
+        <link rel="stylesheet" href="ratings.css" />
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Celiac Safety Ratings</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <nav class="nav-container">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="about.html" class="nav-btn">About</a>
+  <a href="ratings.html" class="nav-btn">Ratings</a>
+</nav>
+<h2>Community Reviews</h2>
+  
+  <!-- Review Form -->
+  <form id="reviewForm">
+    <label>Restaurant Name:</label>
+    <input type="text" id="restaurantName" required>
+
+    <label>Celiac Safety Rating (1-5):</label>
+    <input type="number" id="rating" min="1" max="5" required>
+
+    <label>
+      <input type="checkbox" id="dedicatedFryer"> Dedicated Gluten-Free Fryer?
+    </label>
+
+    <label>Notes / Experience:</label>
+    <textarea id="comments"></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <!-- Review Display List -->
+
+  <div id="reviewsList"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+   <!-- Supabase Library CDN (MUST BE BEFORE script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- Your main JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
+    </body>
+</html>

@@ -3,6 +3,51 @@ img {
 }
 body {
     text-align: center;
-    font-family: 'Arial';
-    background: #cfe1b9
+     font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    color: pink;
+}
+/* Container to space out the buttons */
+.nav-container {
+  display: flex;
+  gap: 15px; /* Adds space between buttons */
+  justify-content: center; /* Centers buttons horizontally */
+  padding: 20px;
+}
+
+/* Base button styling */
+.nav-btn {
+  /* Layout & Sizing */
+  display: inline-block;
+  padding: 12px 24px;
+  
+  /* Colors & Appearance */
+  background-color: #dfe9da; /* Modern indigo color */
+  color: #ffffff;            /* Text color */
+  border-radius: 8px;        /* Soft rounded corners */
+  
+  /* Typography */
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  
+  /* Smooth Hover Transition */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect (When mouse moves over the button) */
+.nav-btn:hover {
+  background-color: #f6f7f3; /* Slightly darker indigo */
+  transform: translateY(-2px); /* Moves button up slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active Effect (When clicking down on the button) */
+.nav-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
